@@ -1,21 +1,21 @@
-const dodger = document.getElementById("dodger"); 
+const beard = document.getElementById("beard"); 
 
-function moveDodgerLeft() {
-    const leftNumbers = dodger.style.left.replace("px", "");
+function moveBeardLeft() {
+    const leftNumbers = beard.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
   
     if (left > -250) {
-      dodger.style.left = `${left - 10}px`;
+      beard.style.left = `${left - 10}px`;
     }
   } 
 
   
-  function moveDodgerRight() {
-      const leftNumbers = dodger.style.left.replace("px", "");
+  function moveBeardRight() {
+      const leftNumbers = beard.style.left.replace("px", "");
       const left = parseInt(leftNumbers, 10);
 
       if (left < 1000) {
-          dodger.style.left = `${left + 10}px`;
+          beard.style.left = `${left + 10}px`;
       }
   }
 
@@ -23,9 +23,23 @@ function moveDodgerLeft() {
   
   document.addEventListener("keydown", function(e) {
     if (e.key === "ArrowLeft") {
-      moveDodgerLeft();
+      moveBeardLeft();
     }
     if (e.key === "ArrowRight") {
-        moveDodgerRight();
+        moveBeardRight();
     }
   }); 
+
+/*
+
+function confetti() {
+  if (dodger left align === "-200px") {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
+}
+
+*/
